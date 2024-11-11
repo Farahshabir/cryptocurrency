@@ -2,26 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mainContainer{
+  background-image: url(images/cryptobackground.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  @apply text-center;
+  @apply flex flex-col items-center;
+  @apply justify-center;
+  @apply h-screen;
 }
